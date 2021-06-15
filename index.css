@@ -1,0 +1,219 @@
+:root {
+    --main-color: #2b3a50;
+    --title-font-size: 16px;
+    --title-font-weight: 600;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Lato', sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+body {
+    background: rgb(204, 204, 204);
+}
+
+section {
+    margin-bottom: 25px;
+}
+
+b {
+    font-weight: bold;
+}
+
+.page {
+    background: white;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 0.5cm;
+    box-shadow: 0 0 0.5cm rgba(0, 0, 0, 0.5);
+}
+
+.page.a4 {
+    width: 21cm;
+    height: 29.7cm;
+}
+
+.root-wrapper {
+    width: 100%;
+    display: flex;
+    height: 100%;
+}
+
+.left-wrapper {
+    width: 30%;
+    padding: 50px 15px 0 15px;
+    background-color: var(--main-color);
+    color: white;
+}
+
+.avatar {
+    height: 220px;
+    overflow: hidden;
+}
+
+.avatar svg {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.avatar img {
+    width: 100%;
+}
+
+.right-wrapper {
+    width: 70%;
+    padding: 30px 20px 0 20px;
+}
+
+.candidate-name-job {
+    position: relative;
+    margin-bottom: 50px;
+}
+
+.candidate-name-job .name {
+    font-size: 52px;
+    font-weight: 300;
+}
+
+.candidate-name-job .job {
+    text-transform: uppercase;
+    z-index: 1;
+    background: white;
+    width: fit-content;
+    position: relative;
+    padding: 0 7px;
+    font-weight: var(--title-font-weight);
+}
+
+.candidate-name-job .job-tail {
+    width: 100%;
+    background: #2b3a50;
+    height: 10px;
+    position: absolute;
+    z-index: 0;
+    bottom: 3px;
+}
+
+.resume-title {
+    display: flex;
+    width: fit-content;
+    font-size: var(--title-font-size);
+    text-transform: uppercase;
+    font-weight: var(--title-font-weight);
+    border-bottom: 2px solid;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+}
+
+.resume-title.black {
+    border-color: black;
+}
+
+.resume-title.white {
+    border-color: white;
+    color: white;
+}
+
+.contact-detail div:nth-child(2) i, .contact-detail div:nth-child(3) i {
+    margin-right: 10px;
+}
+
+.web-link a {
+    text-decoration: none;
+    font-weight: bold;
+    color: white;
+    margin-left: 10px;
+}
+
+.year-and-work {
+    display: flex;
+    width: 100%;
+    padding: 5px 0;
+    align-items: center;
+}
+
+.year-and-work p:first-child {
+    min-width: 80px;
+    font-size: 15px;
+}
+
+/*.year-and-work p.achievement {*/
+/*    font-weight: var(--title-font-weight);*/
+/*    font-size: 16px;*/
+/*}*/
+
+.year-and-work-desc {
+    padding-left: 10px;
+}
+
+.experience-description {
+    margin-bottom: 10px;
+}
+
+.experience-description .title {
+    text-transform: uppercase;
+    font-weight: var(--title-font-weight);
+}
+
+.experience-description .company-detail {
+    padding: 5px 0;
+}
+
+.company-detail > a, .experience-description a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #2b3a50;
+}
+
+.experience-description ul li {
+    margin-left: 18px;
+}
+
+.rating {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 8px;
+}
+
+.rating .point {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    min-width: 60px;
+    margin-left: 10px;
+}
+
+.rating .point span {
+    width: 8px;
+    height: 8px;
+    background: black;
+    border-radius: 50%;
+}
+
+.rating .point span.grey,
+.left-wrapper .rating .point span.grey {
+    background: grey;
+}
+
+.left-wrapper .rating {
+    flex-direction: column;
+    margin-bottom: 0;
+    justify-content: flex-start;
+    padding: 5px 0;
+}
+
+.left-wrapper .rating .point {
+    justify-content: flex-start;
+    margin-left: 0;
+    margin-top: 10px;
+    min-width: 100px;
+}
+
+.left-wrapper .rating .point span {
+    margin-right: 5px;
+    background: white;
+}
